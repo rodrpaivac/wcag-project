@@ -11,7 +11,6 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  
 `;
 
 export const HeaderDiv = styled.div`
@@ -22,6 +21,8 @@ export const HeaderDiv = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
+
+  border-bottom: 1px solid #d5d5d5;
 
   padding-bottom: 8px;
   @media screen and (max-width: 1280px) {
@@ -38,25 +39,27 @@ export const Div = styled.div`
   display: flex;
 `;
 
-type ButtonProps = {solid?: boolean}
+type ButtonProps = { solid?: boolean };
 
 export const Button = styled.button<ButtonProps>`
   display: flex;
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 
-    font-size: 15px;
-    border-radius: 4px;
-    padding: 12px 10px;
-    margin-top: 10px;
+  font-size: 15px;
+  border-radius: 4px;
+  padding: 12px 10px;
+  margin-top: 10px;
 
-    color: ${props => props.solid ? 'var(--color-white)' : 'var(--color-blue)'};
-    background: ${props => props.solid ? 'var(--color-blue)' : 'var(--color-white)'};
-    border: none;
+  color: ${(props) =>
+    props.solid ? "var(--color-white)" : "var(--color-blue)"};
+  background: ${(props) =>
+    props.solid ? "var(--color-blue)" : "var(--color-white)"};
+  border: none;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    &:hover {
-        filter: brightness(1.1);
-    }
+  &:hover {
+    filter: brightness(1.1);
+  }
 `;

@@ -3,12 +3,12 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
 `;
 
 export const Row = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 16px 5px;
 
   #searchBox {
@@ -55,6 +55,8 @@ export const Row = styled.div`
 `;
 
 export const Panel = styled.div`
+  margin-top: 50px;
+
   background: var(--color-white);
   box-shadow: var(--panel-shadow);
 

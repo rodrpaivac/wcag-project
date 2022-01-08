@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  height: 80px;
+  height: 10vh;
   background: var(--color-header);
 
   border-bottom: 1px solid var(--color-border);
@@ -15,7 +15,7 @@ export const Container = styled.div`
 
 export const HeaderDiv = styled.div`
   width: 100%;
-  height: 80px;
+
   background: var(--color-header);
 
   display: flex;
@@ -24,7 +24,7 @@ export const HeaderDiv = styled.div`
 
   border-bottom: 1px solid #d5d5d5;
 
-  padding-bottom: 8px;
+  padding: 8px;
   @media screen and (max-width: 1280px) {
     justify-content: space-between;
     padding: 0px 30px;
@@ -66,6 +66,7 @@ export const Button = styled.button<ButtonProps>`
 
 export const Logo = styled.img`
   width: 165px;
+  margin-top: 2vh;
 `;
 
 export const SearchContainer = styled.div`
@@ -74,7 +75,7 @@ export const SearchContainer = styled.div`
   flex-direction: row;
   display: flex;
   justify-content: space-between;
-  padding: 15px 0px 15px 15px;
+  padding: 1vw 0px 1vw 1vw;
   border-radius: 2px;
   box-shadow: 1px 1px 3px #bdbdbd;
 `;
@@ -86,12 +87,67 @@ export const IconContainer = styled.div`
   align-items: center;
 `;
 
-export const SearchIcon = styled.img`
-  width: 25px;
+export const Icon = styled.img`
+  width: ${(props) => props.width}px;
   align-self: center;
 `;
 
 export const Input = styled.input`
-  font-size: 18px;
+  font-size: 16px;
   width: 45vw;
+`;
+
+export const LeftContainer = styled.div`
+  flex-direction: column;
+  display: flex;
+  margin-top: 20px;
+`;
+
+export const EnderecoContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  border: 2px solid transparent;
+
+  padding: 5px 10px;
+  border-radius: 8px;
+  :hover {
+    border: 2px solid #e8dd74;
+    cursor: pointer;
+  }
+`;
+
+export const Label = styled.a`
+  color: #7e7839;
+  font-size: 12px;
+`;
+
+export const Value = styled.a`
+  color: #000;
+  font-size: 14px;
+`;
+
+export const Column = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const RightContainer = styled.div`
+  flex-direction: row;
+  display: flex;
+  margin-top: 20px;
+`;
+
+export const TransparentButton = styled.div`
+  padding: 0.5vw 1.5vw;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+
+  margin-top: 10vh;
+
+  :hover {
+    border: 2px solid #e8dd74;
+    cursor: pointer;
+  }
 `;

@@ -1,13 +1,12 @@
 import styled from "styled-components";
 
-import { AiFillFacebook, AiFillInstagram, AiOutlineTwitter, AiFillGithub } from 'react-icons/ai'
-
 export const Container = styled.div`
   width: 100%;
-  height: 30vh;
-  background: var(--color-header);
-
-  color: white;
+  height: 15vh;
+  background: white;
+  margin-top: 2.5vw;
+  color: black;
+  border-top: 1px solid var(--color-border);
 
   display: flex;
   align-items: center;
@@ -37,27 +36,29 @@ export const Div = styled.div`
   }
 `;
 
-type ButtonProps = {solid?: boolean}
+type ButtonProps = { solid?: boolean };
 
 export const Button = styled.button<ButtonProps>`
   display: flex;
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 
-    font-size: 15px;
-    border-radius: 4px;
-    padding: 12px 10px;
-    margin-top: 10px;
+  font-size: 15px;
+  border-radius: 4px;
+  padding: 12px 10px;
+  margin-top: 10px;
 
-    color: ${props => props.solid ? 'var(--color-white)' : 'var(--color-blue)'};
-    background: ${props => props.solid ? 'var(--color-blue)' : 'var(--color-white)'};
-    border: none;
+  color: ${(props) =>
+    props.solid ? "var(--color-white)" : "var(--color-blue)"};
+  background: ${(props) =>
+    props.solid ? "var(--color-blue)" : "var(--color-white)"};
+  border: none;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    &:hover {
-        filter: brightness(1.1);
-    }
+  &:hover {
+    filter: brightness(1.1);
+  }
 `;
 
 export const Icons = styled.div`
@@ -67,20 +68,7 @@ export const Icons = styled.div`
     cursor: pointer;
 
     &:hover {
-        padding: 1px;
+      padding: 1px;
     }
   }
-`;
-
-export const FacebookIcon = styled(AiFillFacebook)`
-
-`;
-export const InstagramIcon = styled(AiFillInstagram)`
-    
-`;
-export const TwitterIcon = styled(AiOutlineTwitter)`
-    
-`;
-export const GithubIcon = styled(AiFillGithub)`
-    
 `;

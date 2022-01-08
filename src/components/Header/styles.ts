@@ -63,3 +63,35 @@ export const Button = styled.button<ButtonProps>`
     filter: brightness(1.1);
   }
 `;
+
+export const Logo = styled.img`
+  width: 165px;
+`;
+
+export const SearchContainer = styled.div`
+  width: 50vw;
+  background: white;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0px 15px 15px;
+  border-radius: 2px;
+  box-shadow: 1px 1px 3px #bdbdbd;
+`;
+
+export const IconContainer = styled.div`
+  border-left: 1.5px solid #e6e6e6;
+  display: flex;
+  padding: 0px 10px;
+  align-items: center;
+`;
+
+export const SearchIcon = styled.img`
+  width: 25px;
+  align-self: center;
+`;
+
+export const Input = styled.input`
+  font-size: 18px;
+  width: 45vw;
+`;

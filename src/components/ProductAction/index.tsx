@@ -22,6 +22,7 @@ import {
   Benefits,
   ShieldIcon,
   PreviousPriceRow,
+  SeeMore,
 } from "./styles";
 
 const ProductAction: React.FC = () => {
@@ -36,7 +37,7 @@ const ProductAction: React.FC = () => {
         </div>
       </Row>
 
-      <Condition>Produto Novo</Condition>
+      <Condition>MAIS VENDIDO</Condition>
 
       <PriceCard>
         <PreviousPriceRow> R$ 58 </PreviousPriceRow>
@@ -47,29 +48,31 @@ const ProductAction: React.FC = () => {
         </PriceRow>
 
         <InstallmentsInfo>ou 3x de R$ 11,67</InstallmentsInfo>
+        <SeeMore>Ver os meios de pagamento</SeeMore>
       </PriceCard>
-
-      <StockStatus>
-        <div>
-          <CheckIcon />
-          <span>Estoque disponível</span>
-        </div>
-
-        <p>574 itens em estoque</p>
-      </StockStatus>
 
       <Delivery>
         <DeliveryIcon>
-          <img src="https://img.icons8.com/plasticine/100/000000/free-shipping.png" />
+          <img src={truck} />
         </DeliveryIcon>
 
         <div>
-          <span className="title">Frete grátis</span>
-          <span className="details">Para todos estados brasileiros</span>
+          <span className="title">
+            Chegará grátis entre terça-feira e quinta-feira{" "}
+          </span>
+          <SeeMore>Ver mais formas de entrega</SeeMore>
         </div>
       </Delivery>
 
-      <MethodCard>
+      <StockStatus>
+        <div>
+          <span>Estoque disponível</span>
+        </div>
+
+        <p>Quantidade: 574 itens em estoque</p>
+      </StockStatus>
+
+      {/* <MethodCard>
         <div id="payment-title">
           <PaymentIcon />
           <span>Formas de pagamento</span>
@@ -101,7 +104,7 @@ const ProductAction: React.FC = () => {
         <a href="#" className="more">
           Ver mais opções
         </a>
-      </MethodCard>
+      </MethodCard> */}
 
       <Actions>
         <Button solid>Comprar agora</Button>
@@ -123,3 +126,5 @@ const ProductAction: React.FC = () => {
 };
 
 export default ProductAction;
+
+const truck = require("../../assets/truck.png");

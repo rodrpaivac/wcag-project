@@ -23,12 +23,12 @@ export default createGlobalStyle`
     --color-black: #333;
     --color-white: #FFF;
     --color-gray: #666;
-    --color-blue: #0077B6;
+    --color-blue: #4A81F2;
     --color-header: #FDF173;
     --color-green: #00a650;
 
     --color-search-placeholder: #AAAAAA;
-    --color-border: #ddd;
+    --color-border: #E5E5E5;
 
     --reputation-1: #ffb8b5;
     --reputation-2: #ffe3c2;

@@ -12,6 +12,9 @@ export const Container = styled.div`
   padding: 32px;
   display: flex;
   flex-direction: column;
+  border: 1px solid var(--color-border);
+  border-radius: 5px;
+  margin: 10px;
 `;
 
 export const ProductKind = styled.div`
@@ -78,14 +81,13 @@ export const CartIcon = styled(HiOutlineShoppingCart)`
     padding: 1px;
   }
 `;
-
 export const Condition = styled.div`
   margin-top: 12px;
-  background: var(--color-blue);
+  background: #ee7f46;
   color: var(--color-white);
-  padding: 6px 10px;
+  padding: 4px 6px;
   border-radius: 4px;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   width: fit-content;
 `;
@@ -143,33 +145,30 @@ export const StockStatus = styled.div`
   > div {
     display: flex;
     align-items: center;
-    color: var(--color-green);
+    color: black;
+    font-weight: 600;
 
     span {
-      margin-left: 8px;
     }
   }
 
   > p {
     margin-top: 5px;
-    color: var(--color-gray);
+    color: black;
     font-size: 14px;
-    margin-left: 34px;
   }
 `;
 
 export const DeliveryIcon = styled.div`
   display: flex;
-
   img {
-    width: 40px;
+    width: 25px;
   }
 `;
 
 export const Delivery = styled.div`
   margin-top: 18px;
   display: flex;
-  align-items: center;
   margin-left: -8px;
 
   > div {
@@ -179,7 +178,7 @@ export const Delivery = styled.div`
 
     .title {
       color: var(--color-green);
-      font-size: 16px;
+      font-size: 15px;
     }
     .details {
       margin-top: 5px;
@@ -263,29 +262,20 @@ export const Button = styled.button<ButtonProps>`
   align-items: center;
   justify-content: center;
 
-  font-size: 15px;
+  font-size: 14px;
+  font-weight: 500;
   border-radius: 4px;
   padding: 12px 10px;
   margin-top: 10px;
 
   color: ${(props) =>
     props.solid ? "var(--color-white)" : "var(--color-blue)"};
-  background: ${(props) =>
-    props.solid ? "var(--color-blue)" : "var(--color-transparent)"};
-  border: ${(props) =>
-    props.solid ? "1px solid transparent" : "1px solid var(--color-blue)"};
+  background: ${(props) => (props.solid ? "var(--color-blue)" : "#E5EDFA")};
 
   cursor: pointer;
 
   &:hover {
-    color: ${(props) =>
-      props.solid ? "var(--color-blue)" : "var(--color-white)"};
-    background: ${(props) =>
-      props.solid ? "var(--color-transparent)" : "var(--color-blue)"};
-    border: ${(props) =>
-      props.solid
-        ? "1px solid var(--color-blue)"
-        : "1px solid var(--color-blue)"};
+    background: ${(props) => (props.solid ? "#3A67C1" : "#DCE7F9")};
   }
 `;
 
@@ -314,4 +304,17 @@ export const ShieldIcon = styled(HiOutlineShieldCheck)`
   color: var(--color-green);
 
   flex-shrink: 0;
+`;
+
+export const SeeMore = styled.a`
+  color: var(--color-blue);
+  font-size: 13px;
+  padding: 5px 0px;
+  border: 2px solid transparent;
+  border-radius: 4px;
+
+  :hover {
+    border: 2px solid black;
+    cursor: pointer;
+  }
 `;

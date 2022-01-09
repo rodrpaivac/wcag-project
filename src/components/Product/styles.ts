@@ -68,7 +68,6 @@ export const Panel = styled.div`
 
 export const Column = styled.div`
   &:first-child {
-    border-right: 1px solid var(--color-border);
   }
 `;
 
@@ -86,7 +85,9 @@ export const Gallery = styled.div`
 `;
 
 export const Section = styled.div`
-  border-top: 1px solid var(--color-border);
+  border: 1px solid var(--color-border);
+  border-radius: 5px;
+  margin: 10px;
   padding: 48px 32px;
 
   display: flex;
@@ -121,7 +122,6 @@ export const Section = styled.div`
   > a {
     margin-top: 20px;
     font-size: 14px;
-    font-weight: 600;
     color: var(--color-blue);
     text-decoration: none;
   }
@@ -142,5 +142,18 @@ export const Description = styled.div`
     font-size: 20px;
     color: var(--color-gray);
     line-height: 27px;
+  }
+`;
+
+export const SeeMore = styled.a`
+  color: var(--color-blue);
+  font-size: 13px;
+  padding: 5px 0px;
+  border: 2px solid transparent;
+  border-radius: 4px;
+
+  :hover {
+    border: 2px solid black;
+    cursor: pointer;
   }
 `;

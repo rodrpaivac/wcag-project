@@ -18,19 +18,12 @@ const Product: React.FC = () => {
   const data = [
     {
       image:
-        "https://i.pinimg.com/564x/ea/a1/c0/eaa1c073c2e8ca4bf5765324606e3a17.jpg",
-    },
-    {
-      image:
         "https://www.citysoccerpro.com/wp-content/uploads/2017/11/shirt.jpg",
     },
     {
       image: "https://www.theadairgroup.com/images/Assorted_T_Shirts_large.jpg",
     },
-    {
-      image:
-        "https://sc04.alicdn.com/kf/U2e77b3841e9c4d5dacc1ad599cca94f3Z.jpg",
-    },
+
     {
       image:
         "https://5.imimg.com/data5/AL/FP/MY-45474819/black-plain-blank-cotton-t-shirts-500x500.jpg",
@@ -120,9 +113,17 @@ function Info() {
     <Description>
       <h2>Descrição</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure suscipit
-        ad porro fugiat ipsam labore quas nobis voluptatem nemo, in maxime at
-        ullam fuga fugit animi quae illo esse nam?
+        A primeira imagem exibe uma camisa de gola redonda, manga curta e sem
+        estampa, de cor laranja.
+      </p>
+      <p>
+        A segunda imagem exibe quatro camisas de gola redonda, manga curta e sem
+        estampa, de cores amarelo claro, cinza escuro, cinza claro e vermelho,
+        respectivamente, enfileiradas da esquerda à direita.
+      </p>
+      <p>
+        A terceira imagem exibe uma pessoa vestindo uma camisa de gola redonda,
+        manga curta e sem estampa, de cor preta.
       </p>
       <br />
       <br />

@@ -11,6 +11,10 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
+
+  @media screen and (max-width: 1000px) {
+    height: 150px;
+  }
 `;
 
 export const FooterDiv = styled.div`

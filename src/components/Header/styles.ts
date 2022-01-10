@@ -4,7 +4,7 @@ import { GrLocation } from "react-icons/gr";
 
 export const Container = styled.div`
   width: 100%;
-  height: 180px;
+  height: 140px;
   background: var(--color-header);
 
   border-bottom: 1px solid var(--color-border);
@@ -17,7 +17,7 @@ export const Container = styled.div`
 
 export const HeaderDiv = styled.div`
   width: 100%;
-  height: 180px;
+  height: 140px;
 
   background: var(--color-header);
 
@@ -72,10 +72,10 @@ export const Button = styled.button<ButtonProps>`
 export const Logo = styled.img`
   width: 165px;
   margin-top: 5px;
-
+  margin-left: 10px;
   @media screen and (max-width: 1000px) {
-    width: 145px;
-    margin-top: 20px;
+    width: 135px;
+    margin-top: 55px;
   }
 `;
 
@@ -160,7 +160,6 @@ export const Input = styled.input`
 export const LeftContainer = styled.div`
   flex-direction: column;
   display: flex;
-  margin-top: 20px;
 `;
 
 export const EnderecoContainer = styled.button`
@@ -170,7 +169,6 @@ export const EnderecoContainer = styled.button`
   text-align: left;
   padding: 5px 10px;
   border-radius: 8px;
-  margin-top: 15px;
   :hover {
     border: 2px solid #474424;
     cursor: pointer;
@@ -204,7 +202,7 @@ export const Column = styled.div`
 export const RightContainer = styled.div`
   flex-direction: row;
   display: flex;
-  margin-top: 20px;
+  margin-bottom: 5px;
   @media screen and (max-width: 1000px) {
     margin-top: 0px;
   }

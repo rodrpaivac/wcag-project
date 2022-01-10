@@ -4,7 +4,7 @@ import { GrLocation } from "react-icons/gr";
 
 export const Container = styled.div`
   width: 100%;
-  height: 10vh;
+  height: 180px;
   background: var(--color-header);
 
   border-bottom: 1px solid var(--color-border);
@@ -17,6 +17,7 @@ export const Container = styled.div`
 
 export const HeaderDiv = styled.div`
   width: 100%;
+  height: 180px;
 
   background: var(--color-header);
 
@@ -27,9 +28,11 @@ export const HeaderDiv = styled.div`
   border-bottom: 1px solid #d5d5d5;
 
   padding: 8px;
-  @media screen and (max-width: 1280px) {
+  @media screen and (max-width: 1000px) {
     justify-content: space-between;
     padding: 0px 30px;
+    flex-direction: column;
+    height: 250px;
   }
 `;
 
@@ -68,18 +71,27 @@ export const Button = styled.button<ButtonProps>`
 
 export const Logo = styled.img`
   width: 165px;
-  margin-top: 2vh;
+  margin-top: 5px;
+
+  @media screen and (max-width: 1000px) {
+    width: 145px;
+    margin-top: 20px;
+  }
 `;
 
 export const SearchContainer = styled.div`
-  width: 50vw;
+  width: 500px;
   background: white;
   flex-direction: row;
   display: flex;
   justify-content: space-between;
-  padding: 1vw 0px 1vw 1vw;
+  padding: 3px 0px 3px 10px;
   border-radius: 2px;
   box-shadow: 1px 1px 3px #bdbdbd;
+
+  @media screen and (max-width: 1000px) {
+    width: 300px;
+  }
 `;
 
 export const IconContainer = styled.button`
@@ -93,35 +105,56 @@ export const IconContainer = styled.button`
     cursor: pointer;
     border-radius: 4px;
   }
+
+  @media screen and (max-width: 1000px) {
+    padding: 0px 3px;
+  }
 `;
 
 export const CartIcon = styled(AiOutlineShoppingCart)`
-  width: 1.5vw;
-  height: 1.5vw;
+  width: 30px;
+  height: 30px;
   color: #474424;
   align-self: center;
+  @media screen and (max-width: 1000px) {
+    width: 18px;
+    height: 18px;
+  }
 `;
 
 export const SearchIcon = styled(AiOutlineSearch)`
-  width: 1.5vw;
-  height: 1.5vw;
+  width: 25px;
+  height: 25px;
   color: gray;
 
   align-self: center;
+
+  @media screen and (max-width: 1000px) {
+    width: 20px;
+    height: 20px;
+  }
 `;
 
 export const LocationIcon = styled(GrLocation)`
-  width: 1.8vw;
-  height: 1.8vw;
+  width: 30px;
+  height: 30px;
   margin-right: 0.5vw;
   color: #474424;
 
   align-self: center;
+  @media screen and (max-width: 1000px) {
+    width: 25px;
+    height: 25px;
+  }
 `;
 
 export const Input = styled.input`
   font-size: 16px;
-  width: 45vw;
+  width: 450px;
+  @media screen and (max-width: 1000px) {
+    font-size: 12px;
+    width: 230px;
+  }
 `;
 
 export const LeftContainer = styled.div`
@@ -137,20 +170,30 @@ export const EnderecoContainer = styled.button`
   text-align: left;
   padding: 5px 10px;
   border-radius: 8px;
+  margin-top: 15px;
   :hover {
     border: 2px solid #474424;
     cursor: pointer;
+  }
+  @media screen and (max-width: 1000px) {
+    margin-top: 5px;
   }
 `;
 
 export const Label = styled.a`
   color: #7e7839;
   font-size: 12px;
+  @media screen and (max-width: 1000px) {
+    font-size: 10px;
+  }
 `;
 
 export const Value = styled.a`
   color: #000;
   font-size: 14px;
+  @media screen and (max-width: 1000px) {
+    font-size: 11px;
+  }
 `;
 
 export const Column = styled.div`
@@ -162,19 +205,26 @@ export const RightContainer = styled.div`
   flex-direction: row;
   display: flex;
   margin-top: 20px;
+  @media screen and (max-width: 1000px) {
+    margin-top: 0px;
+  }
 `;
 
 export const TransparentButton = styled.button`
-  padding: 0.5vw 1.5vw;
+  padding: 2px 15px;
   border: 2px solid transparent;
   border-radius: 4px;
   display: flex;
   align-items: center;
 
-  margin-top: 10vh;
+  margin-top: 100px;
 
   :hover {
     border: 2px solid #474424;
     cursor: pointer;
+  }
+
+  @media screen and (max-width: 1000px) {
+    margin: 0px 0px 3px 0px;
   }
 `;

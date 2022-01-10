@@ -50,7 +50,7 @@ const ProductAction: React.FC = () => {
 
       <Delivery>
         <DeliveryIcon>
-          <img src={truck} />
+          <img alt="Forma de entrega" src={truck} />
         </DeliveryIcon>
 
         <div>

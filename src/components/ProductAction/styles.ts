@@ -110,16 +110,6 @@ export const PriceRow = styled.div`
   align-items: flex-start;
   font-size: 44px;
   font-weight: 300;
-
-  .fraction {
-    margin-left: 8.8px;
-  }
-
-  .cents {
-    font-size: 20px;
-    padding-top: 6px;
-    margin-left: 1px;
-  }
 `;
 
 export const PreviousPriceRow = styled.div`

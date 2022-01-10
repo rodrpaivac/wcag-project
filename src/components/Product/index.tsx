@@ -3,7 +3,6 @@ import SellerInfo from "../../components/SellerInfo";
 import ProductAction from "../ProductAction";
 import {
   Container,
-  Row,
   Panel,
   Column,
   Gallery,

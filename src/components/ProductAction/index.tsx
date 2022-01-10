@@ -34,7 +34,7 @@ const ProductAction: React.FC = () => {
       <Row>
         <h1>Camisetas de Diversas Cores Puro Algodão Original</h1>
         <FavoriteButton>
-          <HeartIcon title="Salvar como favorito" />
+          <HeartIcon title="Salvar produto como favorito" />
         </FavoriteButton>
       </Row>
 
@@ -42,11 +42,7 @@ const ProductAction: React.FC = () => {
 
       <PriceCard>
         <PreviousPriceRow> R$ 58 </PreviousPriceRow>
-        <PriceRow>
-          <span className="symbol">R$</span>
-          <span className="fraction">34</span>
-          <span className="cents">99</span>
-        </PriceRow>
+        <PriceRow>R$ 34,99</PriceRow>
 
         <InstallmentsInfo>ou 3x de R$ 11,67</InstallmentsInfo>
         <SeeMore>Ver os meios de pagamento</SeeMore>

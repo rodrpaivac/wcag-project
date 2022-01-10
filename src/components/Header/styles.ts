@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { AiOutlineShoppingCart, AiOutlineSearch } from "react-icons/ai";
+import { GrLocation } from "react-icons/gr";
 
 export const Container = styled.div`
   width: 100%;
@@ -93,8 +95,27 @@ export const IconContainer = styled.button`
   }
 `;
 
-export const Icon = styled.img`
-  width: ${(props) => props.width}px;
+export const CartIcon = styled(AiOutlineShoppingCart)`
+  width: 1.5vw;
+  height: 1.5vw;
+  color: #474424;
+  align-self: center;
+`;
+
+export const SearchIcon = styled(AiOutlineSearch)`
+  width: 1.5vw;
+  height: 1.5vw;
+  color: gray;
+
+  align-self: center;
+`;
+
+export const LocationIcon = styled(GrLocation)`
+  width: 1.8vw;
+  height: 1.8vw;
+  margin-right: 0.5vw;
+  color: #474424;
+
   align-self: center;
 `;
 

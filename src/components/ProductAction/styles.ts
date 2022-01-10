@@ -1,12 +1,12 @@
 import styled from "styled-components";
 import {
-  HiOutlineHeart,
   HiOutlineCheck,
   HiOutlineShieldCheck,
   HiOutlineShoppingCart,
 } from "react-icons/hi";
 import { MdPayment } from "react-icons/md";
 import { RiShareForward2Fill } from "react-icons/ri";
+import { IoMdHeartEmpty } from "react-icons/io";
 
 export const Container = styled.div`
   padding: 32px;
@@ -53,9 +53,9 @@ export const FavoriteButton = styled.button`
     cursor: pointer;
   }
 `;
-export const HeartIcon = styled(HiOutlineHeart)`
-  width: 4vw;
-  height: 4vw;
+export const HeartIcon = styled(IoMdHeartEmpty)`
+  width: 3vw;
+  height: 3vw;
 
   color: var(--color-blue);
 

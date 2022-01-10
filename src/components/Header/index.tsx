@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import { LiveMessage, LiveAnnouncer } from "react-aria-live";
-
 import {
   HeaderDiv,
   Container,
@@ -9,7 +8,6 @@ import {
   SearchContainer,
   Input,
   IconContainer,
-  Icon,
   LeftContainer,
   EnderecoContainer,
   Label,
@@ -17,6 +15,9 @@ import {
   Column,
   RightContainer,
   TransparentButton,
+  CartIcon,
+  LocationIcon,
+  SearchIcon,
 } from "./styles";
 
 const Header: React.FC = () => {
@@ -29,7 +30,7 @@ const Header: React.FC = () => {
               <Logo src={logo} />
             </Div>
             <EnderecoContainer>
-              <Icon width={30} src={location} />
+              <LocationIcon title="Endereço de entrega" />
               <Column>
                 <Label>Enviar para</Label>
                 <Value>Ipatinga 35160208</Value>
@@ -40,7 +41,7 @@ const Header: React.FC = () => {
           <SearchContainer>
             <Input placeholder="Buscar produtos, marcas e muito mais..." />
             <IconContainer>
-              <Icon width={25} src={search} />
+              <SearchIcon title="Pesquisar" />
             </IconContainer>
           </SearchContainer>
           {/* <DivButton className="signIn">
@@ -58,7 +59,7 @@ const Header: React.FC = () => {
               <Value>Compras</Value>
             </TransparentButton>
             <TransparentButton>
-              <Icon title="Carrinho" width={25} src={cart} />
+              <CartIcon title="Carrinho" />
             </TransparentButton>
           </RightContainer>
         </HeaderDiv>

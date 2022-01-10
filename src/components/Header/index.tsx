@@ -20,12 +20,6 @@ import {
 } from "./styles";
 
 const Header: React.FC = () => {
-  const addressRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    addressRef.current?.focus();
-  }, []);
-
   return (
     <LiveAnnouncer>
       <Container>
@@ -34,7 +28,7 @@ const Header: React.FC = () => {
             <Div className="logo">
               <Logo src={logo} />
             </Div>
-            <EnderecoContainer ref={addressRef}>
+            <EnderecoContainer>
               <Icon width={30} src={location} />
               <Column>
                 <Label>Enviar para</Label>
@@ -64,12 +58,7 @@ const Header: React.FC = () => {
               <Value>Compras</Value>
             </TransparentButton>
             <TransparentButton>
-              <LiveMessage
-                message="Carrinho"
-                aria-live="polite"
-                clearOnUnmount="true"
-              />
-              <Icon width={25} src={cart} />
+              <Icon title="Carrinho" width={25} src={cart} />
             </TransparentButton>
           </RightContainer>
         </HeaderDiv>

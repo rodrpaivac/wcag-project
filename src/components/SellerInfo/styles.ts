@@ -174,13 +174,14 @@ export const More = styled.a`
   text-decoration: none;
 `;
 
-export const SeeMore = styled.a`
+export const SeeMore = styled.button`
   color: var(--color-blue);
   font-size: 13px;
   padding: 5px 0px;
   border: 2px solid transparent;
   border-radius: 4px;
-  margin-top: 10px;
+  margin-top: 1vh;
+  text-align: left;
 
   :hover {
     border: 2px solid black;

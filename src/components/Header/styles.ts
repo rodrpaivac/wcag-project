@@ -80,11 +80,17 @@ export const SearchContainer = styled.div`
   box-shadow: 1px 1px 3px #bdbdbd;
 `;
 
-export const IconContainer = styled.div`
-  border-left: 1.5px solid #e6e6e6;
+export const IconContainer = styled.button`
+  border-left: 2px solid #e6e6e6;
   display: flex;
   padding: 0px 10px;
   align-items: center;
+
+  :hover {
+    border: 2px solid #474424;
+    cursor: pointer;
+    border-radius: 4px;
+  }
 `;
 
 export const Icon = styled.img`
@@ -103,15 +109,15 @@ export const LeftContainer = styled.div`
   margin-top: 20px;
 `;
 
-export const EnderecoContainer = styled.div`
+export const EnderecoContainer = styled.button`
   display: flex;
   flex-direction: row;
   border: 2px solid transparent;
-
+  text-align: left;
   padding: 5px 10px;
   border-radius: 8px;
   :hover {
-    border: 2px solid #e8dd74;
+    border: 2px solid #474424;
     cursor: pointer;
   }
 `;
@@ -137,7 +143,7 @@ export const RightContainer = styled.div`
   margin-top: 20px;
 `;
 
-export const TransparentButton = styled.div`
+export const TransparentButton = styled.button`
   padding: 0.5vw 1.5vw;
   border: 2px solid transparent;
   border-radius: 4px;
@@ -147,7 +153,7 @@ export const TransparentButton = styled.div`
   margin-top: 10vh;
 
   :hover {
-    border: 2px solid #e8dd74;
+    border: 2px solid #474424;
     cursor: pointer;
   }
 `;

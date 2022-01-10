@@ -23,6 +23,7 @@ import {
   ShieldIcon,
   PreviousPriceRow,
   SeeMore,
+  FavoriteButton,
 } from "./styles";
 
 const ProductAction: React.FC = () => {
@@ -32,9 +33,9 @@ const ProductAction: React.FC = () => {
 
       <Row>
         <h1>Camisetas de Diversas Cores Puro Algodão Original</h1>
-        <div>
+        <FavoriteButton>
           <HeartIcon title="Salvar como favorito" />
-        </div>
+        </FavoriteButton>
       </Row>
 
       <Condition>MAIS VENDIDO</Condition>

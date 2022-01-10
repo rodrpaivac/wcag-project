@@ -145,15 +145,17 @@ export const Description = styled.div`
   }
 `;
 
-export const SeeMore = styled.a`
+export const SeeMore = styled.button`
   color: var(--color-blue);
   font-size: 13px;
   padding: 5px 0px;
   border: 2px solid transparent;
   border-radius: 4px;
+  text-align: left;
+  margin-top: 1vh;
 
   :hover {
-    border: 2px solid black;
+    border: 2px solid #474424;
     cursor: pointer;
   }
 `;

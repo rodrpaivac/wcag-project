@@ -41,18 +41,25 @@ export const Row = styled.div`
   }
 `;
 
+export const FavoriteButton = styled.button`
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  width: 5vw;
+  height: 5vw;
+  border: 2px solid transparent;
+  :hover {
+    border: 2px solid #474424;
+    cursor: pointer;
+  }
+`;
 export const HeartIcon = styled(HiOutlineHeart)`
-  width: 28px;
-  height: 28px;
+  width: 4vw;
+  height: 4vw;
+
   color: var(--color-blue);
 
-  margin-left: 16px;
   cursor: pointer;
-  flex-shrink: 0;
-
-  &:hover {
-    padding: 1px;
-  }
 `;
 export const ShareIcon = styled(RiShareForward2Fill)`
   width: 28px;
@@ -276,6 +283,8 @@ export const Button = styled.button<ButtonProps>`
 
   &:hover {
     background: ${(props) => (props.solid ? "#3A67C1" : "#DCE7F9")};
+
+    border: 2px solid #474424;
   }
 `;
 
@@ -306,15 +315,16 @@ export const ShieldIcon = styled(HiOutlineShieldCheck)`
   flex-shrink: 0;
 `;
 
-export const SeeMore = styled.a`
+export const SeeMore = styled.button`
   color: var(--color-blue);
   font-size: 13px;
   padding: 5px 0px;
   border: 2px solid transparent;
   border-radius: 4px;
+  text-align: left;
 
   :hover {
-    border: 2px solid black;
+    border: 2px solid #474424;
     cursor: pointer;
   }
 `;

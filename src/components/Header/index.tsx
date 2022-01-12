@@ -26,7 +26,11 @@ const Header: React.FC = () => {
       <HeaderDiv>
         <LeftContainer>
           <Div className="logo">
-            <Logo src={logo} />
+            <Logo
+              aria-label={"Imagem da logo do Mercado Livre"}
+              aria-required="true"
+              src={logo}
+            />
           </Div>
           <EnderecoContainer>
             <LocationIcon title="Endereço de entrega" />

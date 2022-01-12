@@ -20,7 +20,7 @@ const SellerInfo: React.FC = () => {
       <Title>Vendedor:</Title>
 
       <Seller>
-        <img src="https://github.com/brunofilho1.png" alt="" />
+        <img src="https://github.com/brunofilho1.png" alt="Foto do vendedor" />
         <div>
           <a href="#">
             <h3>Bruno Filho</h3>
@@ -38,7 +38,10 @@ const SellerInfo: React.FC = () => {
       </LocationCard>
 
       <ReputationCard>
-        <ReputationThermometer>
+        <ReputationThermometer
+          aria-label={"Medidor de reputação do vendedor: reputação excelente ."}
+          aria-required="true"
+        >
           <li></li>
           <li></li>
           <li></li>

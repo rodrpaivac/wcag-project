@@ -45,8 +45,8 @@ export const FavoriteButton = styled.button`
   border-radius: 4px;
   display: flex;
   justify-content: center;
-  width: 5vw;
-  height: 5vw;
+  width: 44px;
+  height: 44px;
   border: 2px solid transparent;
   :hover {
     border: 2px solid #474424;
@@ -54,8 +54,8 @@ export const FavoriteButton = styled.button`
   }
 `;
 export const HeartIcon = styled(IoMdHeartEmpty)`
-  width: 3vw;
-  height: 3vw;
+  width: 44px;
+  height: 44px;
 
   color: var(--color-blue);
 
@@ -262,8 +262,8 @@ export const Button = styled.button<ButtonProps>`
   font-size: 14px;
   font-weight: 500;
   border-radius: 4px;
-  padding: 12px 10px;
-  margin-top: 10px;
+  padding: 20px 10px;
+  margin: 44px 0px;
 
   color: ${(props) =>
     props.solid ? "var(--color-white)" : "var(--color-blue)"};

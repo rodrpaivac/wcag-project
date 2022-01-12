@@ -55,7 +55,7 @@ export const Row = styled.div`
 `;
 
 export const Panel = styled.div`
-  margin-top: 50px;
+  margin-top: 30px;
 
   background: var(--color-white);
   box-shadow: var(--panel-shadow);
@@ -68,7 +68,6 @@ export const Panel = styled.div`
   @media screen and (max-width: 1000px) {
     flex-direction: column;
     display: flex;
-    margin-top: 80px;
   }
 `;
 

@@ -4,7 +4,7 @@ import { GrLocation } from "react-icons/gr";
 
 export const Container = styled.div`
   width: 100%;
-  height: 140px;
+  height: 100%;
   background: var(--color-header);
 
   border-bottom: 1px solid var(--color-border);
@@ -17,7 +17,7 @@ export const Container = styled.div`
 
 export const HeaderDiv = styled.div`
   width: 100%;
-  height: 140px;
+  height: 100%;
 
   background: var(--color-header);
 
@@ -32,7 +32,7 @@ export const HeaderDiv = styled.div`
     justify-content: space-between;
     padding: 0px 30px;
     flex-direction: column;
-    height: 250px;
+    height: 260px;
   }
 `;
 
@@ -71,11 +71,11 @@ export const Button = styled.button<ButtonProps>`
 
 export const Logo = styled.img`
   width: 165px;
-  margin-top: 5px;
-  margin-left: 10px;
+  margin-bottom: 1px;
+  margin-left: 15px;
   @media screen and (max-width: 1000px) {
     width: 135px;
-    margin-top: 55px;
+    margin-top: 15px;
   }
 `;
 
@@ -85,7 +85,7 @@ export const SearchContainer = styled.div`
   flex-direction: row;
   display: flex;
   justify-content: space-between;
-  padding: 3px 0px 3px 10px;
+  padding: 5px 0px 5px 10px;
   border-radius: 2px;
   box-shadow: 1px 1px 3px #bdbdbd;
 
@@ -116,22 +116,17 @@ export const CartIcon = styled(AiOutlineShoppingCart)`
   height: 30px;
   color: #474424;
   align-self: center;
-  @media screen and (max-width: 1000px) {
-    width: 18px;
-    height: 18px;
-  }
 `;
 
 export const SearchIcon = styled(AiOutlineSearch)`
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
   color: gray;
 
   align-self: center;
 
   @media screen and (max-width: 1000px) {
-    width: 20px;
-    height: 20px;
+    padding: 0px 3px;
   }
 `;
 
@@ -169,6 +164,9 @@ export const EnderecoContainer = styled.button`
   text-align: left;
   padding: 5px 10px;
   border-radius: 8px;
+
+  margin-top: 20px;
+
   :hover {
     border: 2px solid #474424;
     cursor: pointer;
@@ -178,20 +176,14 @@ export const EnderecoContainer = styled.button`
   }
 `;
 
-export const Label = styled.a`
-  color: #7e7839;
-  font-size: 12px;
-  @media screen and (max-width: 1000px) {
-    font-size: 10px;
-  }
+export const Label = styled.p`
+  color: #54502b;
+  font-size: 110%;
 `;
 
-export const Value = styled.a`
+export const Value = styled.p`
   color: #000;
-  font-size: 14px;
-  @media screen and (max-width: 1000px) {
-    font-size: 11px;
-  }
+  font-size: 110%;
 `;
 
 export const Column = styled.div`
@@ -214,15 +206,16 @@ export const TransparentButton = styled.button`
   border-radius: 4px;
   display: flex;
   align-items: center;
+  min-height: 44px;
 
-  margin-top: 100px;
-
+  margin: 100px 12px;
+  margin-bottom: 0px;
   :hover {
     border: 2px solid #474424;
     cursor: pointer;
   }
 
   @media screen and (max-width: 1000px) {
-    margin: 0px 0px 3px 0px;
+    margin: 0px 10px;
   }
 `;

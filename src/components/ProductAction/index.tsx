@@ -38,13 +38,32 @@ const ProductAction: React.FC = () => {
         </FavoriteButton>
       </Row>
 
-      <Condition>MAIS VENDIDO</Condition>
+      <Condition aria-label={"Selo de mais vendido"} aria-required="true">
+        MAIS VENDIDO
+      </Condition>
 
       <PriceCard>
-        <PreviousPriceRow> R$ 58 </PreviousPriceRow>
-        <PriceRow>R$ 34,99</PriceRow>
+        <PreviousPriceRow
+          aria-label={
+            "O preço antigo era de cinquenta e oito reais e 99 centavos"
+          }
+          aria-required="true"
+        >
+          R$ 58,99
+        </PreviousPriceRow>
+        <PriceRow
+          aria-label={"O novo preço é de trinta e quatro reais e 99 centavos"}
+          aria-required="true"
+        >
+          R$ 34,99
+        </PriceRow>
 
-        <InstallmentsInfo>ou 3x de R$ 11,67</InstallmentsInfo>
+        <InstallmentsInfo
+          aria-label={"Ou 3 vezes de onze reais e 67 centavos"}
+          aria-required="true"
+        >
+          ou 3x de R$ 11,67
+        </InstallmentsInfo>
         <SeeMore>Ver os meios de pagamento</SeeMore>
       </PriceCard>
 
@@ -111,7 +130,12 @@ const ProductAction: React.FC = () => {
       <Benefits>
         <li>
           {/* <ShieldIcon /> */}
-          <img src="https://img.icons8.com/bubbles/50/000000/shield.png" />
+
+          <img
+            alt="Imagem de um escudo."
+            src="https://img.icons8.com/bubbles/50/000000/shield.png"
+          />
+
           <p>
             Compre com segurança, receba o produto que está esperando ou
             devolvemos o seu dinheiro.

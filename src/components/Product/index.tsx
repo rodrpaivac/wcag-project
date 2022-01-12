@@ -12,6 +12,7 @@ import {
 } from "./styles";
 
 import { Carousel } from "react-carousel-minimal";
+import { LiveAnnouncer, LiveMessage } from "react-aria-live";
 
 const Product: React.FC = () => {
   const data = [
@@ -42,7 +43,10 @@ const Product: React.FC = () => {
     <Container>
       <Panel>
         <Column>
-          <Gallery>
+          <Gallery
+            aria-label={"Galeria de imagens do produto."}
+            aria-required="true"
+          >
             <Carousel
               data={data}
               time={8000}
@@ -110,28 +114,29 @@ function WarrantySection() {
 function Info() {
   return (
     <Description>
-      <h2>Descrição</h2>
+      <h2>Descrição da imagem</h2>
       <p>
         A primeira imagem exibe uma camisa de gola redonda, manga curta e sem
         estampa, de cor laranja.
       </p>
+      <br />
       <p>
         A segunda imagem exibe quatro camisas de gola redonda, manga curta e sem
         estampa, de cores amarelo claro, cinza escuro, cinza claro e vermelho,
         respectivamente, enfileiradas da esquerda à direita.
       </p>
+      <br />
       <p>
         A terceira imagem exibe uma pessoa vestindo uma camisa de gola redonda,
         manga curta e sem estampa, de cor preta.
       </p>
       <br />
       <br />
-      Itens inclusos: <br />
-      - 1x LED <br />
-      - 1x LED <br />
-      - 1x LED <br />
-      - 1x LED <br />
-      - 1x LED <br />
+
+      <h2>Descrição do produto</h2>
+      <p>
+        Itens inclusos: <br />- 1 camisa.
+      </p>
       <br />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ullam

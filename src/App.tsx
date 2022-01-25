@@ -1,12 +1,12 @@
-import React, { Fragment } from 'react';
-import GlobalStyles from './styles/GlobalStyles';
-import Layout from './components/Layout';
+import React, { Fragment } from "react";
+import GlobalStyles from "./styles/GlobalStyles";
+import Layout from "./components/Layout";
 
 function App() {
   return (
     <>
       <Layout />
-      <GlobalStyles/>
+      <GlobalStyles />
     </>
   );
 }

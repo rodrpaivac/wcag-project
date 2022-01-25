@@ -1,12 +1,12 @@
 import styled from "styled-components";
 import {
-  HiOutlineHeart,
   HiOutlineCheck,
   HiOutlineShieldCheck,
   HiOutlineShoppingCart,
 } from "react-icons/hi";
 import { MdPayment } from "react-icons/md";
 import { RiShareForward2Fill } from "react-icons/ri";
+import { IoMdHeartEmpty } from "react-icons/io";
 
 export const Container = styled.div`
   padding: 32px;
@@ -41,18 +41,25 @@ export const Row = styled.div`
   }
 `;
 
-export const HeartIcon = styled(HiOutlineHeart)`
-  width: 28px;
-  height: 28px;
+export const FavoriteButton = styled.button`
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 2px solid transparent;
+  :hover {
+    border: 2px solid #474424;
+    cursor: pointer;
+  }
+`;
+export const HeartIcon = styled(IoMdHeartEmpty)`
+  width: 44px;
+  height: 44px;
+
   color: var(--color-blue);
 
-  margin-left: 16px;
   cursor: pointer;
-  flex-shrink: 0;
-
-  &:hover {
-    padding: 1px;
-  }
 `;
 export const ShareIcon = styled(RiShareForward2Fill)`
   width: 28px;
@@ -103,16 +110,6 @@ export const PriceRow = styled.div`
   align-items: flex-start;
   font-size: 44px;
   font-weight: 300;
-
-  .fraction {
-    margin-left: 8.8px;
-  }
-
-  .cents {
-    font-size: 20px;
-    padding-top: 6px;
-    margin-left: 1px;
-  }
 `;
 
 export const PreviousPriceRow = styled.div`
@@ -265,8 +262,8 @@ export const Button = styled.button<ButtonProps>`
   font-size: 14px;
   font-weight: 500;
   border-radius: 4px;
-  padding: 12px 10px;
-  margin-top: 10px;
+  padding: 20px 10px;
+  margin: 44px 0px;
 
   color: ${(props) =>
     props.solid ? "var(--color-white)" : "var(--color-blue)"};
@@ -276,6 +273,8 @@ export const Button = styled.button<ButtonProps>`
 
   &:hover {
     background: ${(props) => (props.solid ? "#3A67C1" : "#DCE7F9")};
+
+    border: 2px solid #474424;
   }
 `;
 
@@ -306,15 +305,16 @@ export const ShieldIcon = styled(HiOutlineShieldCheck)`
   flex-shrink: 0;
 `;
 
-export const SeeMore = styled.a`
+export const SeeMore = styled.button`
   color: var(--color-blue);
   font-size: 13px;
   padding: 5px 0px;
   border: 2px solid transparent;
   border-radius: 4px;
+  text-align: left;
 
   :hover {
-    border: 2px solid black;
+    border: 2px solid #474424;
     cursor: pointer;
   }
 `;

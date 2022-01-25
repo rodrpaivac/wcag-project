@@ -23,6 +23,7 @@ import {
   ShieldIcon,
   PreviousPriceRow,
   SeeMore,
+  FavoriteButton,
 } from "./styles";
 
 const ProductAction: React.FC = () => {
@@ -32,28 +33,43 @@ const ProductAction: React.FC = () => {
 
       <Row>
         <h1>Camisetas de Diversas Cores Puro Algodão Original</h1>
-        <div>
-          <HeartIcon title="Salvar como favorito" />
-        </div>
+        <FavoriteButton>
+          <HeartIcon title="Salvar produto como favorito" />
+        </FavoriteButton>
       </Row>
 
-      <Condition>MAIS VENDIDO</Condition>
+      <Condition aria-label={"Selo de mais vendido"} aria-required="true">
+        MAIS VENDIDO
+      </Condition>
 
       <PriceCard>
-        <PreviousPriceRow> R$ 58 </PreviousPriceRow>
-        <PriceRow>
-          <span className="symbol">R$</span>
-          <span className="fraction">34</span>
-          <span className="cents">99</span>
+        <PreviousPriceRow
+          aria-label={
+            "O preço antigo era de cinquenta e oito reais e 99 centavos"
+          }
+          aria-required="true"
+        >
+          R$ 58,99
+        </PreviousPriceRow>
+        <PriceRow
+          aria-label={"O novo preço é de trinta e quatro reais e 99 centavos"}
+          aria-required="true"
+        >
+          R$ 34,99
         </PriceRow>
 
-        <InstallmentsInfo>ou 3x de R$ 11,67</InstallmentsInfo>
+        <InstallmentsInfo
+          aria-label={"Ou 3 vezes de onze reais e 67 centavos"}
+          aria-required="true"
+        >
+          ou 3x de R$ 11,67
+        </InstallmentsInfo>
         <SeeMore>Ver os meios de pagamento</SeeMore>
       </PriceCard>
 
       <Delivery>
         <DeliveryIcon>
-          <img src={truck} />
+          <img alt="Forma de entrega" src={truck} />
         </DeliveryIcon>
 
         <div>
@@ -114,7 +130,12 @@ const ProductAction: React.FC = () => {
       <Benefits>
         <li>
           {/* <ShieldIcon /> */}
-          <img src="https://img.icons8.com/bubbles/50/000000/shield.png" />
+
+          <img
+            alt="Imagem de um escudo."
+            src="https://img.icons8.com/bubbles/50/000000/shield.png"
+          />
+
           <p>
             Compre com segurança, receba o produto que está esperando ou
             devolvemos o seu dinheiro.

@@ -55,7 +55,7 @@ export const Row = styled.div`
 `;
 
 export const Panel = styled.div`
-  margin-top: 50px;
+  margin-top: 30px;
 
   background: var(--color-white);
   box-shadow: var(--panel-shadow);
@@ -64,6 +64,11 @@ export const Panel = styled.div`
   grid-template-columns: 65fr 35fr;
 
   border-radius: 4px;
+
+  @media screen and (max-width: 1000px) {
+    flex-direction: column;
+    display: flex;
+  }
 `;
 
 export const Column = styled.div`
@@ -77,7 +82,6 @@ export const Gallery = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 530px;
 
   > img {
     height: 73%;
@@ -145,15 +149,17 @@ export const Description = styled.div`
   }
 `;
 
-export const SeeMore = styled.a`
+export const SeeMore = styled.button`
   color: var(--color-blue);
   font-size: 13px;
   padding: 5px 0px;
   border: 2px solid transparent;
   border-radius: 4px;
+  text-align: left;
+  margin-top: 1vh;
 
   :hover {
-    border: 2px solid black;
+    border: 2px solid #474424;
     cursor: pointer;
   }
 `;

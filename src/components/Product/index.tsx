@@ -13,8 +13,9 @@ import {
 
 import { Carousel } from "react-carousel-minimal";
 import { LiveAnnouncer, LiveMessage } from "react-aria-live";
+import { Props } from "./types";
 
-const Product: React.FC = () => {
+const Product: React.FC<Props> = ({ setIsComprar }) => {
   const data = [
     {
       image:
@@ -78,7 +79,7 @@ const Product: React.FC = () => {
         </Column>
 
         <Column>
-          <ProductAction />
+          <ProductAction setIsComprar={setIsComprar} />
           <SellerInfo />
 
           <WarrantySection />

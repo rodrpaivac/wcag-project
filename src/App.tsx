@@ -1,11 +1,11 @@
-import React, { Fragment } from "react";
+import React from "react";
+import Routes from "./routes";
 import GlobalStyles from "./styles/GlobalStyles";
-import Layout from "./components/Layout";
 
 function App() {
   return (
     <>
-      <Layout />
+      <Routes />
       <GlobalStyles />
     </>
   );

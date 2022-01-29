@@ -5,8 +5,6 @@ import {
   ProductKind,
   Row,
   HeartIcon,
-  ShareIcon,
-  CartIcon,
   Condition,
   PriceCard,
   PriceRow,
@@ -14,19 +12,20 @@ import {
   StockStatus,
   Delivery,
   DeliveryIcon,
-  MethodCard,
-  PaymentIcon,
-  CheckIcon,
   Actions,
   Button,
   Benefits,
-  ShieldIcon,
   PreviousPriceRow,
   SeeMore,
   FavoriteButton,
 } from "./styles";
+import { Props } from "./types";
 
-const ProductAction: React.FC = () => {
+const ProductAction: React.FC<Props> = ({ setIsComprar }) => {
+  const handleComprar = () => {
+    setIsComprar(true);
+  };
+
   return (
     <Container>
       <ProductKind>Roupas, Calçados e Acessórios</ProductKind>
@@ -88,49 +87,15 @@ const ProductAction: React.FC = () => {
         <p>Quantidade: 574 itens em estoque</p>
       </StockStatus>
 
-      {/* <MethodCard>
-        <div id="payment-title">
-          <PaymentIcon />
-          <span>Formas de pagamento</span>
-        </div>
-        <span className="details">Aceitamos qualquer dessas formas</span>
-        <div id="payment-icons-div">
-          <img
-            className="payment-icon"
-            src="https://img.icons8.com/fluency/48/000000/mastercard.png"
-          />
-          <img
-            className="payment-icon"
-            src="https://img.icons8.com/color/48/000000/visa.png"
-          />
-          <img
-            className="payment-icon"
-            src="https://www.keune.com.br/images/icons/card_elo.png"
-            alt=""
-          />
-          <img
-            className="payment-icon"
-            src="https://cdn0.iconfinder.com/data/icons/50-payment-system-icons-2/480/Boleto.png"
-          />
-          <img
-            className="payment-icon"
-            src="https://logodownload.org/wp-content/uploads/2020/02/pix-bc-logo-3.png"
-          />
-        </div>
-        <a href="#" className="more">
-          Ver mais opções
-        </a>
-      </MethodCard> */}
-
       <Actions>
-        <Button solid>Comprar agora</Button>
+        <Button onClick={() => handleComprar()} solid>
+          Comprar agora
+        </Button>
         <Button>Adicionar ao carrinho</Button>
       </Actions>
 
       <Benefits>
         <li>
-          {/* <ShieldIcon /> */}
-
           <img
             alt="Imagem de um escudo."
             src="https://img.icons8.com/bubbles/50/000000/shield.png"

@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.js": "/youtube-clone-mercadolivre/static/js/main.ebecba98.chunk.js",
-    "main.js.map": "/youtube-clone-mercadolivre/static/js/main.ebecba98.chunk.js.map",
-    "runtime-main.js": "/youtube-clone-mercadolivre/static/js/runtime-main.b5726354.js",
-    "runtime-main.js.map": "/youtube-clone-mercadolivre/static/js/runtime-main.b5726354.js.map",
-    "static/css/2.e9c16cc8.chunk.css": "/youtube-clone-mercadolivre/static/css/2.e9c16cc8.chunk.css",
-    "static/js/2.4d51fbce.chunk.js": "/youtube-clone-mercadolivre/static/js/2.4d51fbce.chunk.js",
-    "static/js/2.4d51fbce.chunk.js.map": "/youtube-clone-mercadolivre/static/js/2.4d51fbce.chunk.js.map",
-    "index.html": "/youtube-clone-mercadolivre/index.html",
-    "precache-manifest.1fa52c6ca808ea9f947479cc1c1eaddd.js": "/youtube-clone-mercadolivre/precache-manifest.1fa52c6ca808ea9f947479cc1c1eaddd.js",
-    "service-worker.js": "/youtube-clone-mercadolivre/service-worker.js",
-    "static/css/2.e9c16cc8.chunk.css.map": "/youtube-clone-mercadolivre/static/css/2.e9c16cc8.chunk.css.map",
-    "static/js/2.4d51fbce.chunk.js.LICENSE.txt": "/youtube-clone-mercadolivre/static/js/2.4d51fbce.chunk.js.LICENSE.txt",
-    "static/media/logo1.png": "/youtube-clone-mercadolivre/static/media/logo1.721eae8f.png"
+    "main.js": "/wcag-project/static/js/main.985d7c9f.chunk.js",
+    "main.js.map": "/wcag-project/static/js/main.985d7c9f.chunk.js.map",
+    "runtime-main.js": "/wcag-project/static/js/runtime-main.76ba29f8.js",
+    "runtime-main.js.map": "/wcag-project/static/js/runtime-main.76ba29f8.js.map",
+    "static/css/2.e9c16cc8.chunk.css": "/wcag-project/static/css/2.e9c16cc8.chunk.css",
+    "static/js/2.1538bea3.chunk.js": "/wcag-project/static/js/2.1538bea3.chunk.js",
+    "static/js/2.1538bea3.chunk.js.map": "/wcag-project/static/js/2.1538bea3.chunk.js.map",
+    "index.html": "/wcag-project/index.html",
+    "precache-manifest.f7a59b22f6ef155d3363425db1479a61.js": "/wcag-project/precache-manifest.f7a59b22f6ef155d3363425db1479a61.js",
+    "service-worker.js": "/wcag-project/service-worker.js",
+    "static/css/2.e9c16cc8.chunk.css.map": "/wcag-project/static/css/2.e9c16cc8.chunk.css.map",
+    "static/js/2.1538bea3.chunk.js.LICENSE.txt": "/wcag-project/static/js/2.1538bea3.chunk.js.LICENSE.txt",
+    "static/media/logo1.png": "/wcag-project/static/media/logo1.721eae8f.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.b5726354.js",
+    "static/js/runtime-main.76ba29f8.js",
     "static/css/2.e9c16cc8.chunk.css",
-    "static/js/2.4d51fbce.chunk.js",
-    "static/js/main.ebecba98.chunk.js"
+    "static/js/2.1538bea3.chunk.js",
+    "static/js/main.985d7c9f.chunk.js"
   ]
 }

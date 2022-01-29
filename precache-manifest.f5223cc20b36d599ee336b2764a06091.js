@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a151e9545ae579f540f920d68c81fd1f",
+    "revision": "7f2322e7f4b326687404c2d186b26c42",
     "url": "/wcag-project/index.html"
   },
   {
-    "revision": "f6ada19f15b1e590a5eb",
+    "revision": "3d3a600e637955ce9fc1",
     "url": "/wcag-project/static/css/2.e9c16cc8.chunk.css"
   },
   {
-    "revision": "f6ada19f15b1e590a5eb",
-    "url": "/wcag-project/static/js/2.48e7b445.chunk.js"
+    "revision": "3d3a600e637955ce9fc1",
+    "url": "/wcag-project/static/js/2.47be190b.chunk.js"
   },
   {
     "revision": "06e8df320f3f70bb05b7b69a75772229",
-    "url": "/wcag-project/static/js/2.48e7b445.chunk.js.LICENSE.txt"
+    "url": "/wcag-project/static/js/2.47be190b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "44ab3e409fb7fe97ae0a",
-    "url": "/wcag-project/static/js/main.9b48bf11.chunk.js"
+    "revision": "4311562030a1ca34f8c1",
+    "url": "/wcag-project/static/js/main.c187dada.chunk.js"
   },
   {
     "revision": "8a3a229aff9665a22398",

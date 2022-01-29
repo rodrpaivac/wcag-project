@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7f039a160d69a9746b4297473f8b199a",
+    "revision": "9a9fb69389bd824014309c406476eaa7",
     "url": "/wcag-project/index.html"
   },
   {
-    "revision": "f39b228637a6f9e2a2fe",
+    "revision": "616f4cb582523bfd7f4a",
     "url": "/wcag-project/static/css/2.e9c16cc8.chunk.css"
   },
   {
-    "revision": "f39b228637a6f9e2a2fe",
-    "url": "/wcag-project/static/js/2.f41a85e6.chunk.js"
+    "revision": "616f4cb582523bfd7f4a",
+    "url": "/wcag-project/static/js/2.2b5f9d00.chunk.js"
   },
   {
     "revision": "06e8df320f3f70bb05b7b69a75772229",
-    "url": "/wcag-project/static/js/2.f41a85e6.chunk.js.LICENSE.txt"
+    "url": "/wcag-project/static/js/2.2b5f9d00.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1cc80d9d0cda485c5d2f",
-    "url": "/wcag-project/static/js/main.e9816ff6.chunk.js"
+    "revision": "7e52f22afbde313fb773",
+    "url": "/wcag-project/static/js/main.7b0f8816.chunk.js"
   },
   {
     "revision": "8a3a229aff9665a22398",

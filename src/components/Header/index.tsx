@@ -1,5 +1,4 @@
 import React from "react";
-import { LiveMessage, LiveAnnouncer } from "react-aria-live";
 import {
   HeaderDiv,
   Container,
@@ -19,15 +18,18 @@ import {
   LocationIcon,
   SearchIcon,
 } from "./styles";
+import { Props } from "./types";
 
-const Header: React.FC = () => {
+const Header: React.FC<Props> = ({ goBackHome }) => {
   return (
     <Container>
       <HeaderDiv>
         <LeftContainer>
-          <Div className="logo">
+          <Div className="logo" onClick={() => goBackHome()}>
             <Logo
-              aria-label={"Imagem da logo do Mercado Livre"}
+              aria-label={
+                "Imagem da logo do Mercado Livre. Clique aqui para retornar à página principal."
+              }
               aria-required="true"
               src={logo}
             />

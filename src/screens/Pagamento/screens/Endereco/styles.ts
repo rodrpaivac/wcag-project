@@ -22,6 +22,10 @@ export const SelectedAddressContainer = styled.div`
   background: #eeeeee;
   padding: 3vw;
   margin: 1vw 6vw;
+
+  @media screen and (max-width: 1000px) {
+    width: 80vw;
+  }
 `;
 
 export const AddressRow = styled.div`
@@ -70,6 +74,12 @@ export const RadioBoxSelected = styled.div`
 
 export const EditarButtonContainer = styled.button`
   margin-top: 3vw;
+  padding: 15px;
+  &:hover {
+    border: 2px solid #474424;
+    cursor: pointer;
+    border-radius: 4px;
+  }
 `;
 
 export const EditarButtonLabel = styled.p`
@@ -83,7 +93,7 @@ export const LocationIcon = styled(GrLocation)`
 `;
 
 export const Button = styled.button`
-  display: flex;
+   display: flex;
   align-items: center;
   justify-content: center;
 
@@ -97,12 +107,45 @@ export const Button = styled.button`
 
   color: white;
   background: var(--color-blue);
-
+  @media screen and (max-width: 1000px) {
+    width: 80vw;
+    margin: 44px 7vw;
+  }
   cursor: pointer;
 
   &:hover {
     background: #3a67c1;
 
     border: 2px solid #474424;
+    border-radius: 4px;
   }
 `;
+
+export const CancelarButtonContainer = styled.button`
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 10px;
+  margin-left: 7vw;
+  margin-top: -90px;
+  width: 20vw;
+
+  @media screen and (max-width: 1000px) {
+    margin: 24px 7vw;
+    width: 80vw;
+    padding: 20px 10px;
+  }
+  &:hover {
+    border: 2px solid #474424;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+`;
+
+export const CancelarLabel = styled.p`
+  font-size: 14px;
+  width: 35vw;
+  color: #3a67c1;
+`;
+
+export const Buttons = styled.div``;

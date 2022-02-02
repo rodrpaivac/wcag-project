@@ -5,21 +5,21 @@ import {
   Address,
   AddressRow,
   Button,
+  Buttons,
+  CancelarButtonContainer,
+  CancelarLabel,
   Container,
   EditarButtonContainer,
   EditarButtonLabel,
   LocationIcon,
   LocationIconContainer,
-  RadioBoxContainer,
-  RadioBoxSelected,
   SelectedAddressContainer,
   SubTitle,
   Title,
 } from "./styles";
 import { Props } from "./types";
 
-const Endereco: React.FC<Props> = ({ setIsEnderecoConfirmed }) => {
-  const [isSelected, setIsSelected] = useState<boolean>(true);
+const Endereco: React.FC<Props> = ({ setIsEnderecoConfirmed, goBackHome }) => {
   return (
     <Container>
       <Title>Aonde você quer receber sua compra?</Title>
@@ -33,7 +33,7 @@ const Endereco: React.FC<Props> = ({ setIsEnderecoConfirmed }) => {
             />
           </LocationIconContainer>
           <Address>
-            Avendida 26 de outubro, número 4000.
+            Avenida 26 de outubro, número 4000.
             <br />
             Bairro Bela Vista, Ipatinga - MG.
             <br />
@@ -45,13 +45,18 @@ const Endereco: React.FC<Props> = ({ setIsEnderecoConfirmed }) => {
           <EditarButtonLabel>Editar ou escolher outro</EditarButtonLabel>
         </EditarButtonContainer>
       </SelectedAddressContainer>
-      <Button
-        onClick={() => {
-          setIsEnderecoConfirmed(true);
-        }}
-      >
-        Confirmar
-      </Button>
+      <Buttons>
+        <Button
+          onClick={() => {
+            setIsEnderecoConfirmed(true);
+          }}
+        >
+          Confirmar
+        </Button>
+        <CancelarButtonContainer onClick={() => goBackHome()}>
+          <CancelarLabel>Cancelar</CancelarLabel>
+        </CancelarButtonContainer>
+      </Buttons>
     </Container>
   );
 };

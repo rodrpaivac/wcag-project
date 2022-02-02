@@ -77,6 +77,12 @@ export const Logo = styled.img`
     width: 135px;
     margin-top: 15px;
   }
+
+  &:hover {
+    border: 2px solid #474424;
+    cursor: pointer;
+    border-radius: 4px;
+  }
 `;
 
 export const SearchContainer = styled.div`

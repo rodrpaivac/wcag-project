@@ -9,10 +9,16 @@ import {
   IconContainer,
   Icon,
   Button,
+  VoltarButtonContainer,
+  VoltarLabel,
+  Buttons,
 } from "./styles";
 import { Props } from "./types";
 
-const FormaPagamento: React.FC<Props> = () => {
+const FormaPagamento: React.FC<Props> = ({
+  setIsEnderecoConfirmed,
+  goBackHome,
+}) => {
   return (
     <Container>
       <Title>Como você prefere pagar?</Title>
@@ -28,10 +34,19 @@ const FormaPagamento: React.FC<Props> = () => {
         </FormaPagamentoLabel>
         <RadioBox isSelected={true} />
       </FormaPagamentoContainer>
+      <Buttons>
+        <Button
+          onClick={() => {
+            goBackHome();
+          }}
+        >
+          Finalizar compra
+        </Button>
 
-      <Button onClick={() => alert("Teste finalizado")}>
-        Finalizar compra
-      </Button>
+        <VoltarButtonContainer onClick={() => setIsEnderecoConfirmed(false)}>
+          <VoltarLabel>Editar endereço de entrega</VoltarLabel>
+        </VoltarButtonContainer>
+      </Buttons>
     </Container>
   );
 };
